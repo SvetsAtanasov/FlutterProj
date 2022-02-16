@@ -21,10 +21,6 @@ class DeckHandler extends StatelessWidget {
 }
 
 List<CardObj> getList(List<CardObj> cards) {
-  for (var i = 0; i < cards.length; i++) {
-    cards[i];
-  }
-
   return cards;
 }
 
