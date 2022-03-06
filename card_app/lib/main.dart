@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './deckHandler.dart';
+import 'gameManager.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,11 +9,11 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    DeckHandler deckHandler = DeckHandler();
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blue,
-        body: deckHandler,
+        body: Stack(children: [
+          GameManager(),
+        ]),
       ),
     );
   }
